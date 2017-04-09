@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            Local Weather
+        </title>
+        <link rel = 'stylesheet' href="Weather.css">
+        <link rel = 'stylesheet' href="weather-icons.min.css">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+        <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+        <script type='text/javascript' src='Weather.js'></script>
+    </head>
+    <body>
+        <div id = 'main-title'>
+            <h1 id = 'main-title-text'>Athul's Local Weather App</h1>
+        </div>
+        <div id = 'place-time-container'>
+            <div id = 'place-box'>
+                <div id = 'place'></div>
+            </div>
+            <div id = 'timeAndDate'>
+                <div id = 'date'></div>
+                <div id = 'time'></div>
+            </div>
+        </div>
+        <div id = 'weather-card'>
+            <div id = 'weather-card-container'>
+                <div id = 'row-1'>
+                    <div id = 'icon-container'>
+                        <div id = 'icon-area'>
+                            <i id='main-icon'></i>
+                        </div>
+                    </div>
+                    <div id = 'temperature-container'>
+                        <div id = 'temp-title-text'>Temperature</div>
+                        <div id = 'temp-main-area'>
+                            <div id = 'temp-main-text'></div>
+                            <div id = 'temp-min-max'>
+                                <div id = 'temp-min'></div>
+                                <div id = 'temp-max'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = 'cftoggle-container'><button id = 'cftoggle'>Convert</button></div>
+                </div>
+                <div id = 'row-2'>
+                    <div id = 'humidity-cloud-container'>
+                        <div id = 'humidity-cloud-wrapper'>
+                            <div id = 'weather-description'></div>
+                            <div id = 'cloud-cover'></div>
+                            <div id = 'humidity'></div>
+                        </div>
+                    </div>
+                    <div id = 'pressure-wind-container'>
+                        <div id ='pressure-cloud-wrapper'>
+                            <div id = 'wind-speed'></div>
+                            <div id = 'wind-direction-wrapper'>
+                                <div id = 'wind-direction'></div>
+                                <div id = 'wind-direction-icon'><i id ='wind-icon'></i></div>
+                            </div>
+                            <div id = 'pressure'></div>
+                        </div>
+                    </div>
+                </div>
+                <div id = 'row-3'>
+                    <div id = 'forecast-container'>
+                        
+                        <div id = 'day1' class = 'forecast-main'>
+                            <div id = 'day1-title-text' class = 'forecast-title'></div>
+                            <div id = 'day1-icon' class = 'forecast-icon'><i></i></div>
+                            <div id ='day1-forecast-description' class = 'forecast-description'></div>
+                            <div id ='day1-temp-container' class = 'forecast-temp-container'>
+                                <div id = 'day1-temp-max' class = 'forecast-temp-max'></div>
+                                <div id = 'day1-temp-min' class = 'forecast-temp-min'></div>
+                            </div>
+                        </div>
+                        
+                        <div id = 'day2' class = 'forecast-main'>
+                            <div id = 'day2-title-text' class = 'forecast-title'></div>
+                            <div id = 'day2-icon' class = 'forecast-icon'><i></i></div>
+                            <div id ='day2-forecast-description' class = 'forecast-description'></div>
+                            <div id ='day2-temp-container' class = 'forecast-temp-container'>
+                                <div id = 'day2-temp-max' class = 'forecast-temp-max'></div>
+                                <div id = 'day2-temp-min' class = 'forecast-temp-min'></div>
+                            </div>
+                        </div>
+                        
+                        <div id = 'day3' class = 'forecast-main'>
+                            <div id = 'day3-title-text' class = 'forecast-title'></div>
+                            <div id = 'day3-icon' class = 'forecast-icon'><i></i></div>
+                            <div id ='day3-forecast-description' class = 'forecast-description'></div>
+                            <div id ='day3-temp-container' class = 'forecast-temp-container'>
+                                <div id = 'day3-temp-max' class = 'forecast-temp-max'></div>
+                                <div id = 'day3-temp-min' class = 'forecast-temp-min'></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

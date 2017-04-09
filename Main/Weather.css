@@ -1,0 +1,365 @@
+/*The CSS for this project got way too messy because I didn't organize the required information concisely in classes. I didn't plan the appearance too much in advanced, so the CSS is unnecessarily long and messy.*/
+
+@import url(https://fonts.googleapis.com/css?family=Oxygen:700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200,400);
+
+* {
+    
+}
+
+body {
+    background-color: #D3D3D3;
+    min-width: 800px;
+}
+
+#main-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: auto;
+    background-color: #004B8D;
+    border-radius: 8px;
+}
+
+h1#main-title-text {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 30px;
+    color: white;
+}
+
+#place-time-container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+#place-box {
+    width: 300px;
+    height: 150px;
+    background-color: #7ABAF2;
+    float: left;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #444;
+}
+
+#place {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 40px 20px 40px 20px;
+}
+
+#timeAndDate {
+    width: 300px;
+    height: 150px;
+    background-color: #7ABAF2;
+    float: right;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #444;
+}
+
+#date {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0px 10px 0px;
+}
+
+#time {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+#weather-card {
+    width: 835px;
+    height: 770px;
+    background-color: #00305A;
+    margin: 250px auto 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #444;
+}
+
+#weather-card-container {
+    
+}
+
+#row-1 {
+    display: flex;
+}
+
+#icon-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4192D9;
+    margin: 30px 10px 10px 20px;
+}
+
+#icon-area {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+#main-icon {
+    font-size: 6.5em;
+    color: white;
+    vertical-align: middle;
+    line-height: 150px; 
+}
+
+#temperature-container {
+    width: 500px;
+    height: 170px;
+    border-radius: 6px;
+    background-color: #4192D9;
+    margin: 20px 10px 10px 10px;
+    display: block;
+}
+
+#temp-title-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+#temp-main-area {
+    width: 400px;
+    margin: 10px auto 0px auto;
+}
+
+#temp-main-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    float: left;
+}
+
+#temp-min-max {
+    float: right;
+    display: block;
+}
+
+#temp-min {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+}
+
+#temp-max {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+}
+
+#cftoggle-container {
+    width: 100px;
+    height: 100px;
+    margin: 55px 20px 10px 10px;
+}
+
+button#cftoggle {
+    border: 0px;
+    background-color: #305A00;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 26px;
+    outline: none;
+}
+
+#cftoggle:hover {
+    color: #00305A;
+    background-color: white;
+}
+
+#row-2 {
+    display: flex;
+}
+
+#humidity-cloud-container {
+    width: 375px;
+    height: 200px;
+    background-color: #4192D9;
+    margin: 10px 20px 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+}
+
+#humidity-cloud-wrapper {
+    margin-top: 20px;
+}
+
+#weather-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#cloud-cover {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#humidity {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#pressure-wind-container {
+    width: 375px;
+    height: 200px;
+    background-color: #4192D9;
+    margin: 10px 20px 10px 20px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+#pressure-cloud-wrapper {
+    margin-top: 20px;
+}
+
+#wind-speed {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#wind-direction-wrapper {
+    width: 270px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+#wind-direction {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#wind-direction-icon {
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+#wind-icon {
+    font-size: 3em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#pressure {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+}
+
+#row-3 {
+    
+}
+
+#forecast-container {
+    width: 792px;
+    height: 320px;
+    background-color: #4192D9;
+    border-radius: 6px;
+    position: relative;
+    right: 2px;
+    margin: 10px auto 20px auto;
+    display: flex;
+}
+
+.forecast-main {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    background-color: #004B8D;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.forecast-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.forecast-icon {
+    font-size: 5em;
+    color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+}
+
+.forecast-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    margin: 10px auto 10px auto;
+}
+
+.forecast-temp-container {
+    width: 200px;
+    margin: 20px auto 10px auto;
+}
+
+.forecast-temp-max {
+    float: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #002241;
+}
+
+.forecast-temp-min {
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #0074DA;
+}
